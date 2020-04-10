@@ -14,7 +14,7 @@
 #include <QIcon>
 
 #ifndef KIRIGAMI_BUILD_TYPE_STATIC
-#include <kirigami2_export.h>
+#include "../kirigami2_export.h"
 #endif
 
 namespace Kirigami {

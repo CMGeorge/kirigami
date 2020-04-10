@@ -9,6 +9,9 @@
 #include <QQuickItem>
 #include <QVariant>
 #include <QPointer>
+#ifndef KIRIGAMI_BUILD_TYPE_STATIC
+#include "kirigami2_export.h"
+#endif
 
 class ContentItem;
 class ColumnView;
@@ -18,7 +21,7 @@ class ColumnView;
  * used to access the view and page information such as the position and informations for layouting, such as fillWidth
  * @since 2.7
  */
-class ColumnViewAttached : public QObject
+class KIRIGAMI2_EXPORT ColumnViewAttached : public QObject
 {
     Q_OBJECT
 

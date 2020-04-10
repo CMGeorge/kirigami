@@ -12,6 +12,8 @@
 #include <QVariant>
 #include <QPointer>
 
+#include "kirigami2_export.h"
+
 class QNetworkAccessManager;
 class QNetworkReply;
 
@@ -19,7 +21,7 @@ namespace Kirigami {
     class PlatformTheme;
 }
 
-class Icon : public QQuickItem
+class /*KIRIGAMI2_EXPORT*/ Icon : public QQuickItem
 {
     Q_OBJECT
 

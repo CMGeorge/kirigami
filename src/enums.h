@@ -8,8 +8,11 @@
 #define ENUMS_H
 
 #include <QObject>
+#ifndef KIRIGAMI_BUILD_TYPE_STATIC
+#include "kirigami2_export.h"
+#endif
 
-class ApplicationHeaderStyle : public QObject
+class KIRIGAMI2_EXPORT ApplicationHeaderStyle : public QObject
 {
     Q_OBJECT
 

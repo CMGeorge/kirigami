@@ -13,6 +13,9 @@
 
 #include <QQmlEngine>
 #include <QQmlExtensionPlugin>
+#ifndef KIRIGAMI_BUILD_TYPE_STATIC
+#include "kirigami2_export.h"
+#endif
 
 class KirigamiPlugin : public QQmlExtensionPlugin
 {

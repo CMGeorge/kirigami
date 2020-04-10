@@ -10,6 +10,9 @@
 
 #include <QQuickItem>
 #include <QPointer>
+#ifndef KIRIGAMI_BUILD_TYPE_STATIC
+#include "kirigami2_export.h"
+#endif
 
 class QPropertyAnimation;
 class QQmlComponent;

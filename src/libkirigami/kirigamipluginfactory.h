@@ -11,7 +11,7 @@
 #include <QObject>
 
 #ifndef KIRIGAMI_BUILD_TYPE_STATIC
-#include <kirigami2_export.h>
+#include "../kirigami2_export.h"
 #endif
 
 namespace Kirigami {
@@ -25,7 +25,7 @@ namespace Kirigami {
 #ifdef KIRIGAMI_BUILD_TYPE_STATIC
 class KirigamiPluginFactory : public QObject
 #else
-class KIRIGAMI2_EXPORT KirigamiPluginFactory : public QObject
+class  KIRIGAMI2_EXPORT KirigamiPluginFactory : public QObject
 #endif
 {
     Q_OBJECT

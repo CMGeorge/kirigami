@@ -8,12 +8,15 @@
 
 #include <QObject>
 #include <QVariant>
+#ifndef KIRIGAMI_BUILD_TYPE_STATIC
+#include "kirigami2_export.h"
+#endif
 
 /**
  * This class contains global kirigami settings about the current device setup
  * It is exposed to QML as the singleton "Settings"
  */
-class Settings : public QObject
+class KIRIGAMI2_EXPORT Settings : public QObject
 {
     Q_OBJECT
 

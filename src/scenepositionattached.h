@@ -9,6 +9,9 @@
 
 #include <QtQml>
 #include <QObject>
+#ifndef KIRIGAMI_BUILD_TYPE_STATIC
+#include "kirigami2_export.h"
+#endif
 
 class QQuickItem;
 
@@ -23,7 +26,7 @@ class QQuickItem;
  * @endcode
  * @since 2.3
  */
-class ScenePositionAttached : public QObject
+class KIRIGAMI2_EXPORT ScenePositionAttached : public QObject
 {
     Q_OBJECT
     /**

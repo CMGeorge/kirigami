@@ -10,6 +10,9 @@
 #include <QtQml>
 #include <QObject>
 #include <QQuickWindow>
+#ifndef KIRIGAMI_BUILD_TYPE_STATIC
+#include "kirigami2_export.h"
+#endif
 
 class QQuickItem;
 
@@ -28,7 +31,7 @@ class QQuickItem;
  * already use this, but only when implementing a custom graphical Control.
  * @since 2.3
  */
-class MnemonicAttached : public QObject
+class KIRIGAMI2_EXPORT MnemonicAttached : public QObject
 {
     Q_OBJECT
     /**

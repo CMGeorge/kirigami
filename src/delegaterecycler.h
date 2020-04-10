@@ -11,10 +11,13 @@
 #include <QVariant>
 #include <QPointer>
 
+#ifndef KIRIGAMI_BUILD_TYPE_STATIC
+#include "kirigami2_export.h"
+#endif
 
 class DelegateCache;
 
-class DelegateRecyclerAttached : public QObject
+class KIRIGAMI2_EXPORT DelegateRecyclerAttached : public QObject
 {
     Q_OBJECT
 
@@ -45,7 +48,7 @@ Q_SIGNALS:
  * Also, do NOT use this with a Repeater.
  * @since 2.4
  */
-class DelegateRecycler : public QQuickItem
+class KIRIGAMI2_EXPORT DelegateRecycler : public QQuickItem
 {
     Q_OBJECT
 

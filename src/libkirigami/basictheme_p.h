@@ -12,6 +12,7 @@
 #include <QQuickItem>
 #include <QColor>
 #include <QPointer>
+#include "../kirigami2_export.h"
 
 namespace Kirigami {
 
